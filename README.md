@@ -34,6 +34,8 @@ Learn how to efficiently handle real-time streaming data in Syncfusion .NET MAUI
 
 This sample demonstrates how to efficiently stream live data in .NET MAUI Charts using chart-level and series-level suspend and resume notifications for optimal real-time rendering performance.
 
+![KB_demo-ezgif.com-video-to-gif-converter.gif](https://support.syncfusion.com/kb/agent/attachment/article/23742/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjcwOTY1Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.umw-CHsUu90ncoC-u_sNgyjLWtWBlY4NHznIKEZ2G18)
+
 ## Troubleshooting
 
 ### Path Too Long Exception
