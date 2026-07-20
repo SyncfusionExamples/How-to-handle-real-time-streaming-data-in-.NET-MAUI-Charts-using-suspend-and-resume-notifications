@@ -1,0 +1,57 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RealtimeStreamingSample.MainPage"
+             BackgroundColor="#F3F4F6">
+
+    <VerticalStackLayout Padding="20" VerticalOptions="Center">
+
+        <!-- Card Container -->
+        <Border BackgroundColor="White"
+               Padding="25"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               WidthRequest="450">
+
+            <VerticalStackLayout Spacing="2">
+
+                <!-- Title -->
+                <Label Text="Real-Time Streaming Dashboard"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="#111827"/>
+
+                <!-- Subtitle -->
+                <Label Text="Monitor live data using chart-level and series-level data streaming"
+                       FontSize="13"
+                       HorizontalOptions="Center"
+                       TextColor="#6B7280"/>
+
+                <!--Buttons -->
+                <VerticalStackLayout Spacing="15" Margin="0,10,0,0">
+
+                    <Button Text="Chart-Level Streaming"
+                            HeightRequest="55"
+                            CornerRadius="12"
+                            Clicked="ChartButton_Clicked"
+                            BackgroundColor="#3B82F6"
+                            TextColor="White"
+                            FontAttributes="Bold"/>
+
+                    <Button Text="Series-Level Streaming"
+                            HeightRequest="55"
+                            CornerRadius="12"
+                            Clicked="SeriesButton_Clicked"
+                            BackgroundColor="#10B981"
+                            TextColor="White"
+                            FontAttributes="Bold"/>
+
+                </VerticalStackLayout>
+
+            </VerticalStackLayout>
+
+        </Border>
+
+    </VerticalStackLayout>
+
+</ContentPage>

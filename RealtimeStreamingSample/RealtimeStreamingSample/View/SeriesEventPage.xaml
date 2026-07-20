@@ -1,0 +1,64 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="http://schemas.syncfusion.com/maui"
+             x:Class="RealtimeStreamingSample.SeriesEventPage"
+             BackgroundColor="#F3F4F6">
+
+         <!-- Card Container -->
+        <Border BackgroundColor="White" Padding="10" Margin="30">
+
+            <!-- Chart -->
+            <chart:SfCartesianChart>
+
+                <chart:SfCartesianChart.Title>
+                    <!--Title-->
+                    <VerticalStackLayout>
+                        <Label Text="Sensor Data Stream"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="#111827"/>
+
+                        <!--Subtitle-->
+                        <Label Text="Real-time sensor readings plotted continuously"
+                               FontSize="13"
+                               TextColor="#6B7280"/>
+                    </VerticalStackLayout>
+                </chart:SfCartesianChart.Title>
+
+                <!-- X Axis -->
+                <chart:SfCartesianChart.XAxes>
+                    <chart:DateTimeAxis ShowMajorGridLines="False">
+
+                        <chart:DateTimeAxis.Title>
+                            <chart:ChartAxisTitle Text="Time" FontAttributes="Bold" />
+                        </chart:DateTimeAxis.Title>
+
+                    </chart:DateTimeAxis>
+                </chart:SfCartesianChart.XAxes>
+
+                <!-- Y Axis -->
+                <chart:SfCartesianChart.YAxes>
+                    <chart:NumericalAxis Minimum="0" Maximum="250" ShowMajorGridLines="False">
+
+                        <chart:NumericalAxis.Title>
+                            <chart:ChartAxisTitle Text="Sensor Value" FontAttributes="Bold"/>
+                        </chart:NumericalAxis.Title>
+
+                    </chart:NumericalAxis>
+                </chart:SfCartesianChart.YAxes>
+
+                <!-- Series -->
+                <chart:SfCartesianChart.Series>
+                    <chart:SplineSeries x:Name="series"
+                                            ItemsSource="{Binding ChartData}"
+                                            XBindingPath="Time"
+                                            YBindingPath="Value"
+                                            StrokeWidth="3"
+                                            PaletteBrushes="{Binding CustomBrushes}" />
+                </chart:SfCartesianChart.Series>
+
+            </chart:SfCartesianChart>
+
+        </Border>
+
+</ContentPage>
